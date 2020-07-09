@@ -12,5 +12,5 @@ RUN curl -Lo skaffold "https://storage.googleapis.com/skaffold/releases/${SKAFFO
  && install kustomize /usr/local/bin/ \
  && curl -LO "https://storage.googleapis.com/kubernetes-release/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl" \
  && install kubectl /usr/local/bin/ \
- && rm kustomize skaffold kubectl
+ && rm kustomize skaffold kubectl \
  && apk add --no-cache make
